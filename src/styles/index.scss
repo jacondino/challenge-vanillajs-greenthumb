@@ -44,5 +44,25 @@ body {
   &__transparent {
     background: transparent;
     border: 0;
+    cursor: pointer;
+  }
+
+  &__outline {
+    background: transparent;
+    color: #196146;
+    border: 1px solid #196146;
+    border-radius: 50px;
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+      margin-right: 17px;
+    }
   }
 }

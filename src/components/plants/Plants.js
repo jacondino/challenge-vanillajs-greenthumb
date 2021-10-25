@@ -3,6 +3,7 @@ import { getPlants } from "../../service/plants";
 import Card from "./card/Card";
 import NoResult from "./noResult/NoResult";
 import Favorite from "./favorite/Favorite";
+import ArrowTop from "../../assets/images/icons/arrow-up.svg";
 
 export default () => {
   const Plants = document.createElement("section");
@@ -21,6 +22,19 @@ export default () => {
       <h2>Our picks for you</h2>
       <div class="plants__box"></div>
     </div>`;
+
+    const btn = document.createElement("button");
+
+    btn.className = "button__outline";
+
+    btn.innerHTML = `<img src=${ArrowTop} alt="button to go to the next section of the page" /> back to the top`;
+
+    btn.addEventListener("click", () =>
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    );
+
+    const container = Plants.getElementsByClassName("container")[0];
+    container.appendChild(btn);
 
     const card = Plants.getElementsByClassName("plants__box")[0];
 
