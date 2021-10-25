@@ -1,0 +1,18 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 57px 0 54px;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    p {
+      font-size: 14px;
+      font-weight: 300;
+      color: #848484;
+      margin: 13px 0 24px;
+    }
+  }
+}

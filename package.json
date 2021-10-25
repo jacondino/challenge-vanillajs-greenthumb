@@ -1,0 +1,24 @@
+{
+  "name": "front-end-test-2",
+  "version": "1.0.0",
+  "description": "Simple Parcel Sandbox",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel ./src/views/index.html --open",
+    "build": "parcel build ./src/views/index.html",
+    "deploy": "yarn build && surge"
+  },
+  "dependencies": {
+    "@parcel/transformer-sass": "^2.0.0",
+    "parcel": "1.12.4",
+    "surge": "^0.23.0"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ],
+  "devDependencies": {
+    "parcel-bundler": "^1.6.1",
+    "sass": "^1.43.3"
+  },
+  "keywords": []
+}

@@ -1,0 +1,48 @@
+@import "../components/header/style.scss";
+@import "../components/select/style.scss";
+@import "../components/selectCard/style.scss";
+@import "../components/filter/style.scss";
+@import "../components/plants/style.scss";
+@import "../components/plants/noResult/style.scss";
+@import "../components/plants/favorite/style.scss";
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+
+  @media (max-width: 576px) {
+    max-width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1400px) {
+    max-width: 1320px;
+  }
+}
+
+.button {
+  &__transparent {
+    background: transparent;
+    border: 0;
+  }
+}

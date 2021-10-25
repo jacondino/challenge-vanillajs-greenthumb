@@ -1,0 +1,31 @@
+.header {
+  background-color: #75bc97;
+  height: auto;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  perspective: 8px;
+  perspective-origin: 0%;
+
+  &__box,
+  &__box div {
+    display: flex;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    margin: 57px 0 54px;
+
+    h1 {
+      font-size: 70px;
+      font-weight: 700;
+      color: white;
+      display: block;
+      margin: 47px 0 31px;
+    }
+  }
+}
