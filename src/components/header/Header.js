@@ -9,13 +9,14 @@ export default () => {
   const Header = document.createElement("header");
 
   Header.setAttribute("class", "header");
+  // <div class="header__bg">
+  //   <div class="header__bg__img" id="header__bg1"><img src=${bgLeft} /></div>
+  //   <div class="header__bg__img" id="header__bg2"><img src=${bgCenter} /></div>
+  //   <div class="header__bg__img" id="header__bg3"><img src=${bgRight} /></div>
+  // </div>
 
   Header.innerHTML = `
-  <div class="header__bg">
-    <div class="header__bg__img" id="header__bg1"><img src=${bgLeft} /></div>	
-    <div class="header__bg__img" id="header__bg2"><img src=${bgCenter} /></div>	
-    <div class="header__bg__img" id="header__bg3"><img src=${bgRight} /></div>	
-  </div>
+
   <div class="container">
     <div class="header__title">
       <img src=${Logo} alt="logo Green thumb" />
