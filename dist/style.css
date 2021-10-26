@@ -173,6 +173,11 @@
     .favorite {
       grid-row: 1;
       grid-column: 1; } }
+  .favorite__card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: right; }
   .favorite__pin {
     display: flex;
     align-items: center;

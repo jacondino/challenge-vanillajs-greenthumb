@@ -14,6 +14,13 @@
     grid-column: 1;
   }
 
+  &__card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
   &__pin {
     display: flex;
     align-items: center;
