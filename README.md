@@ -1,3 +1,3 @@
 ## Como rodar localmente
 
-`yarn && yarn start` ou `npm install && npm start`
+`yarn && yarn start` ou `npm install && npm run start`
