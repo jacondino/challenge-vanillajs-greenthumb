@@ -7,6 +7,16 @@
   overflow-y: hidden;
   perspective: 8px;
   perspective-origin: 0%;
+  background-image: url("../src/assets/images/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  @include mobile {
+    background-image: url("../src/assets/images/bg2.jpg");
+    background-position: top;
+    padding-bottom: 173px;
+  }
 
   &__box,
   &__box div {
