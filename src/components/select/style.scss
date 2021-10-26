@@ -1,46 +1,40 @@
 .select {
   position: relative;
   width: max-content;
-}
 
-.select select {
-  border: 1px solid #a8a8a8;
-  color: #a8a8a8;
-  border-radius: 19px;
-  padding: 8px;
-  width: 250px;
-  height: 40px;
-  font-size: 14px;
+  &::before {
+    content: url("../src/assets/images/icons/drop1.svg");
+    position: absolute;
+    top: 7px;
+    right: 12px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+    font-size: 28px;
+    background: white;
+    line-height: 45px;
+    pointer-events: none;
+    height: 20px;
+  }
 
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  text-indent: 1px;
-  text-overflow: "";
-}
+  & select {
+    border: 1px solid #a8a8a8;
+    color: #a8a8a8;
+    border-radius: 19px;
+    padding: 8px;
+    width: 250px;
+    height: 40px;
+    font-size: 14px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: "";
 
-.select::before {
-  //content: url(../src/assets/images/icons/drop1.svg);
-  position: absolute;
-  top: 7px;
-  right: 12px;
-  width: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  text-align: center;
-  font-size: 28px;
-  background: white;
-  line-height: 45px;
-  pointer-events: none;
-  height: 20px;
-}
-
-.select:hover::before {
-  color: rgba(255, 255, 255, 0.6);
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.select select option {
-  padding: 30px;
+    & option {
+      padding: 30px;
+    }
+  }
 }

@@ -26,6 +26,10 @@
       color: white;
       display: block;
       margin: 47px 0 31px;
+
+      @include mobile {
+        font-size: 40px;
+      }
     }
   }
 }

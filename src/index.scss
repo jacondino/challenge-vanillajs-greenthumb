@@ -1,10 +1,15 @@
-@import "../components/header/style.scss";
-@import "../components/select/style.scss";
-@import "../components/selectCard/style.scss";
-@import "../components/filter/style.scss";
-@import "../components/plants/style.scss";
-@import "../components/plants/noResult/style.scss";
-@import "../components/plants/favorite/style.scss";
+@mixin mobile {
+  @media only screen and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@import "./components/header/style.scss";
+@import "./components/select/style.scss";
+@import "./components/filter/style.scss";
+@import "./components/plants/style.scss";
+@import "./components/plants/noResult/style.scss";
+@import "./components/plants/favorite/style.scss";
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -21,6 +26,7 @@ body {
 
   @media (max-width: 576px) {
     max-width: 100%;
+    padding: 0 38px;
   }
 
   @media (min-width: 768px) {

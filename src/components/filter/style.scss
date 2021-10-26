@@ -3,10 +3,18 @@
   justify-content: space-between;
   margin: 57px 0 54px;
 
+  @include mobile {
+    display: block;
+  }
+
   &__box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include mobile {
+      margin-bottom: 50px;
+    }
 
     p {
       font-size: 14px;

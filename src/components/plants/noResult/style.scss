@@ -7,6 +7,10 @@
     align-items: center;
     color: #a9a9a9;
 
+    @include mobile {
+      display: block;
+    }
+
     h3 {
       font-size: 45px;
       font-weight: 700;
@@ -20,6 +24,13 @@
 
     &__icon--left {
       margin-left: 39%;
+
+      @include mobile {
+        display: flex;
+        justify-content: center;
+        margin-top: 37px;
+        margin-left: auto;
+      }
     }
   }
 }

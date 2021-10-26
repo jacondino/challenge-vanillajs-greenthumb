@@ -1,4 +1,4 @@
-import "../src/styles";
+import "../src/index.scss";
 import Header from "./components/header/Header";
 import Filter from "./components/filter/Filter";
 import Plants from "./components/plants/Plants";

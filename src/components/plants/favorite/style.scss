@@ -9,6 +9,11 @@
   border-radius: 5px;
   position: relative;
 
+  @include mobile {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
   &__pin {
     display: flex;
     align-items: center;
@@ -25,6 +30,10 @@
     left: 0;
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
+
+    @include mobile {
+      font-size: 12px;
+    }
   }
 
   &__box {
@@ -37,6 +46,11 @@
       font-size: 35px;
       font-weight: 700;
       line-height: 37px;
+
+      @include mobile {
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
   }
 
@@ -45,6 +59,10 @@
     margin-bottom: 16px;
     font-size: 24px;
     text-align: right;
+
+    @include mobile {
+      font-size: 16px;
+    }
   }
 
   &__image {
@@ -53,6 +71,10 @@
     align-items: center;
     height: 350px;
 
+    @include mobile {
+      height: 160px;
+    }
+
     img {
       height: inherit;
     }
@@ -60,6 +82,11 @@
 
   &__icons {
     height: 26px;
+
+    @include mobile {
+      height: 18px;
+      display: flex;
+    }
 
     img {
       height: inherit;

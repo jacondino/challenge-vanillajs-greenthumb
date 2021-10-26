@@ -2,25 +2,31 @@
   "name": "front-end-test-2",
   "version": "1.0.0",
   "description": "Simple Parcel Sandbox",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
-    "start": "parcel ./src/views/index.html --open",
-    "build": "parcel build ./src/views/index.html",
-    "deploy": "yarn build && surge"
-  },
-  "dependencies": {
-    "@babel/plugin-transform-runtime": "^7.15.8",
-    "@parcel/transformer-sass": "^2.0.0",
-    "parcel": "1.12.4",
-    "surge": "^0.23.0"
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --watch"
   },
   "browserslist": [
     "last 1 Chrome version"
   ],
   "devDependencies": {
-    "@babel/core": "^7.15.8",
-    "parcel-bundler": "^1.6.1",
-    "sass": "^1.43.3"
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^0.28.11",
+    "file-loader": "^6.2.0",
+    "html-loader": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.8.3",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "url-loader": "^4.1.1",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
   },
   "keywords": []
 }
